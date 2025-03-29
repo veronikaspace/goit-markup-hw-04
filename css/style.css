@@ -344,6 +344,8 @@ h2 {
     width: calc((100% - 48px) / 3);
     flex-shrink: 0;
     max-width: 360px;
+    
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .post-text {
@@ -357,7 +359,7 @@ h2 {
     border-right: 1px solid #e7e9fc;
 }
 
-.portfolio-text:hover {
+.portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -404,10 +406,15 @@ h2 {
 
 .footer-container {
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+
+.logo-container {
+    margin-right: 120px;
 }
 
 .social-media {
+    font-weight: 500;
     color: #fff;
     margin-bottom: 16px;
 }
@@ -434,7 +441,8 @@ h2 {
     fill: #f4f4fd;
 }
 
-.soc-footer-link:hover {
+.soc-footer-link:hover,
+.soc-footer-link:focus {
     background-color: #31d0aa;
 }
 
