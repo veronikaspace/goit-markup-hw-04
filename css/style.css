@@ -443,8 +443,8 @@ h2 {
     fill: #f4f4fd;
 }
 
-.soc-footer-item:hover .soc-footer-link,
-.soc-footer-item:focus .soc-footer-link {
+.soc-footer-link:hover,
+.soc-footer-link:focus {
     background-color: #31d0aa;
 }
 
